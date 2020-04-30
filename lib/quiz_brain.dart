@@ -31,11 +31,9 @@ class QuizBrain {
   ];
 
   void nexQuestion() {
-    if (_questionNumber < _questionBank.length) {
+    if (_questionNumber < _questionBank.length - 1) {
       _questionNumber++;
     }
-  } else {
-    _questionNumber = 0;
   }
 
   String getQuestionText() {
